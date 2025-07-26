@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Products | Food Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <canvas id="logo" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a class="active" href="products.html">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Products</h1>
+        <p>Discover the products on offer.</p>
+
+        <section id="shop-controls"></section>
+            <button id="display-basket" onclick="displayBasket()">Show Basket</button>
+            <p>Budget: </p><p id="budget-display">50</p>
+            <ul id="basket-list"></ul>
+        </section>
+
+        <section class="product">
+            <h2>Apple</h2>
+                <button id="purchase-apple" onclick="purchase('apple')">Purchase</button>
+                <p>Price: 1</p>
+                <p>Stock: <span id="stock-apple">5</span></p>
+            <h2>Orange</h2>
+                <button id="purchase-orange" onclick="purchase('orange')">Purchase</button>
+                <p>Price: 2</p>
+                <p>Stock: <span id="stock-orange">5</span></p>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
