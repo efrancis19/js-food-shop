@@ -9,24 +9,19 @@
         <canvas id="logo" width="200" height="100" style="border:1px solid #000000;"></canvas>
         <nav class="main-nav">
             <a href="home.html">Home</a>
-            <a class="active" href="products.html">Products</a>
-            <a href="add_product.html">Add A Product</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="add_product.html">Add A Product</a>
         </nav>
     </header>
 
     <main>
         <h1>Products</h1>
-        <p>Discover the products on offer.</p>
-
-        <section id="shop-controls"></section>
-            <button id="display-basket" onclick="displayBasket()">Show Basket</button>
-            <p>Budget: </p><p id="budget-display">50</p>
-            <ul id="basket-list"></ul>
-        </section>
-
-        <div id="product-section"></div>
-
+        <p>Add new products here.</p>
+        <input type="text" id="new-product"></input>
+        <button onclick = "addProduct()">Add Product</button>
+        <button onclick="resetData()">Reset Data</button>
     </main>
     <script src="script.js"></script>
+
 </body>
 </html>
